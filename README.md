@@ -25,6 +25,10 @@ Food-101データセットをダウンロードし、ついでに検証用の縮
 ```
 % python3 train.py
 ```
+予測精度を確認します。だいたい60%ぐらいになります。
+```
+% python3 evaluate.py
+```
 SavedModelを作成します。
 ```
 % python3 keras2saved_model.py
