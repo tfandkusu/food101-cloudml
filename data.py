@@ -30,14 +30,6 @@ class Data:
             for label in self.labels:
                 self.test.append(jd[label])
 
-        # かさ増し担当
-        self.idg = tf.keras.preprocessing.image.ImageDataGenerator(
-            rotation_range=20,
-            width_shift_range=0.2,
-            height_shift_range=0.2,
-            horizontal_flip=True)
-
-
     def generator(self):
         "訓練データのジェネレータ"
         while True:
